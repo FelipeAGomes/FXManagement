@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import uk.co.management.entities.NewOverheadCost;
 
-@Repository
 public interface NewOverheadCostRepository extends JpaRepository<NewOverheadCost, Long> {
 
 	@Query(value = "SELECT sum(value) FROM NewOverheadCost")
